@@ -1,0 +1,222 @@
+/* Import Poppins font via Google Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a202c, #2d3748);
+  padding: 1rem; /* Reduced padding for mobile */
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.leaderboard-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(246, 224, 94, 0.2) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.leaderboard-title {
+  font-size: 1.8rem; /* Smaller for mobile */
+  font-weight: 700;
+  color: #f6e05e;
+  text-shadow: 0 0 15px rgba(246, 224, 94, 0.6); /* Reduced shadow */
+  margin-bottom: 1rem; /* Reduced margin */
+  animation: fadeInDown 1s ease-out;
+  z-index: 2;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.leaderboard-table {
+  width: 100%;
+  max-width: 400px; /* Reduced max-width for mobile */
+  background: linear-gradient(135deg, #2d3748, #4a5568);
+  border-radius: 10px; /* Smaller radius */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Reduced shadow */
+  padding: 0.5rem; /* Reduced padding */
+  overflow: hidden;
+  z-index: 2;
+}
+
+.ellipsis-row {
+  font-size: 1.2rem; /* Smaller for mobile */
+  color: #f6e05e;
+  text-align: center;
+  padding: 0.5rem; /* Reduced padding */
+  z-index: 2;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-size: 0.9rem; /* Smaller for mobile */
+  font-weight: 600;
+  color: #f6e05e;
+  text-transform: uppercase;
+  padding: 0.5rem; /* Reduced padding */
+  border-bottom: 1px solid #f6e05e; /* Thinner border */
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-size: 0.9rem; /* Smaller for mobile */
+  padding: 0.5rem; /* Reduced padding */
+  background: rgba(45, 55, 72, 0.9);
+  margin: 0.3rem 0; /* Reduced margin */
+  border-radius: 5px; /* Smaller radius */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.table-row:hover {
+  transform: translateY(-3px); /* Reduced hover effect */
+  box-shadow: 0 5px 15px rgba(246, 224, 94, 0.2); /* Reduced shadow */
+}
+
+.highlight-row {
+  background: linear-gradient(90deg, #ffd70033, #ffd70022);
+  border-left: 3px solid #ffd700; /* Thinner border */
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 0 8px #ffd70044; /* Reduced shadow */
+  animation: highlightPulse 1.5s infinite;
+}
+
+@keyframes highlightPulse {
+  0% { box-shadow: 0 0 8px #ffd70044; }
+  50% { box-shadow: 0 0 12px #ffd70066; }
+  100% { box-shadow: 0 0 8px #ffd70044; }
+}
+
+/* New: Styles for the button container */
+.leaderboard-actions {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically by default */
+  align-items: center; /* Center buttons horizontally */
+  gap: 15px; /* Space between buttons */
+  margin-top: 30px; /* Space above the button group */
+  padding-bottom: 20px; /* Space below the button group */
+  z-index: 2; /* Ensure buttons are above background effects */
+}
+
+/* Existing button styles (now applied to 'back-button' and 'next-button') */
+/* You might want to define a common button base style and then extend it */
+.back-button,
+.next-button { /* Added .next-button here as per its use in components */
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #6c5ce7, #8e44ad); /* Example color for next/back */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-decoration: none; /* In case it's used as a link */
+  display: flex; /* For icon + text alignment */
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+.back-button:hover,
+.next-button:hover {
+  background: linear-gradient(90deg, #5b4dbd, #7d3ca0);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+}
+
+/* Specific style for the Download Certificate button, if different */
+.certificate-button {
+  background: linear-gradient(90deg, #e74c3c, #c0392b); /* Example: Reddish gradient */
+  /* Inherits other styles from .next-button or .back-button */
+}
+
+.certificate-button:hover {
+  background: linear-gradient(90deg, #c0392b, #a52a2a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+
+/* Specific style for the Share on X button */
+.share-on-x-button {
+  /* The inline styles in ShareOnXButton.js take precedence, but you can override or extend here */
+  /* It's better to manage common button properties in a shared class like .next-button */
+  background-color: #1DA1F2; /* X's brand blue */
+  color: white;
+  padding: 12px 25px; /* Adjust padding to match other buttons */
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.share-on-x-button:hover {
+  background-color: #0d8bd3; /* Darker X blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(29, 161, 242, 0.4);
+}
+
+
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+  .leaderboard-title { font-size: 2.5rem; }
+  .leaderboard-table { max-width: 600px; }
+  .ellipsis-row { font-size: 1.5rem; }
+  .table-header { font-size: 1rem; }
+  .table-row { font-size: 1rem; padding: 1rem; margin: 0.5rem 0; border-radius: 8px; }
+  .table-row:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(246, 224, 94, 0.3); }
+  .highlight-row { border-left: 5px solid #ffd700; box-shadow: 0 0 10px #ffd70055; }
+
+  /* For larger screens, arrange buttons horizontally */
+  .leaderboard-actions {
+    flex-direction: row; /* Align buttons horizontally */
+    gap: 30px; /* More space between buttons */
+  }
+
+  .back-button,
+  .next-button,
+  .certificate-button,
+  .share-on-x-button { /* Apply larger screen styles to all relevant buttons */
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+  }
+
+  .back-button:hover,
+  .next-button:hover,
+  .certificate-button:hover,
+  .share-on-x-button:hover {
+    transform: translateY(-3px);
+  }
+}

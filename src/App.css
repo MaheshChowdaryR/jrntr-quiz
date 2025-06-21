@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #1f2937;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .image-container {
+    width: 12rem;
+    height: 12rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .animation-title {
+    font-size: 1.75rem;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+  }
+
+  .intro-description {
+    font-size: 1rem;
+  }
+
+  .intro-input, .intro-button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .quiz-title {
+    font-size: 1.75rem;
+  }
+
+  .question-card {
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+
+  .quiz-question {
+    font-size: 1rem;
+  }
+
+  .option {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .completion-title {
+    font-size: 2rem;
+  }
+
+  .completion-score {
+    font-size: 2.5rem;
   }
 }

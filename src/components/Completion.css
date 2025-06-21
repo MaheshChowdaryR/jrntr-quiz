@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.completion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a202c, #2d3748);
+  padding: 2rem;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.completion-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f6e05e;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(246, 224, 94, 0.6);
+}
+
+.completion-score {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.next-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #ed8936, #dd6b20);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(237, 137, 54, 0.3);
+}
+
+.next-button:hover {
+  background: linear-gradient(90deg, #dd6b20, #c05621);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(237, 137, 54, 0.4);
+}
+
+.certificate-button {
+  background: linear-gradient(90deg, #4a90e2, #357ab7);
+}
+
+.certificate-button:hover {
+  background: linear-gradient(90deg, #357ab7, #2a5f8f);
+}

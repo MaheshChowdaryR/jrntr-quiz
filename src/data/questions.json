@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "english": "In Nannaku Prematho, what task does Abhiram execute to drive the climax twist against Krishnamurthy?",
+      "options": {
+        "a": "Decodes a financial ledger",
+        "b": "Sabotages a business deal",
+        "c": "Reveals a past family secret",
+        "d": "Tracks Krishnamurthy’s son"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 2,
+      "english": "In Oosaravelli, which action by Tony triggers the twist revealing his true motive?",
+      "options": {
+        "a": "Destroys a gang’s hideout",
+        "b": "Burns a personal keepsake",
+        "c": "Interrogates a traitor",
+        "d": "Protects Niharika in a chase"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 3,
+      "english": "In Temper, what task does Daya perform that sparks the twist in his moral shift?",
+      "options": {
+        "a": "Investigates a crime scene",
+        "b": "Escorts a key witness",
+        "c": "Confronts his corrupt boss",
+        "d": "Hears a victim’s statement"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 4,
+      "english": "In Aravindha Sametha, which act by Veera Raghava seals the twist toward peace?",
+      "options": {
+        "a": "Negotiates with faction leaders",
+        "b": "Restores a community center",
+        "c": "Disarms rival fighters",
+        "d": "Addresses a village gathering"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 5,
+      "english": "In Rakhi, what task does Ramakrishna undertake to uncover the twist about his sister’s fate?",
+      "options": {
+        "a": "Examines her personal letters",
+        "b": "Pursues her last contact",
+        "c": "Searches her workplace",
+        "d": "Challenges her in-laws"
+      },
+      "correct": "a"
+    },
+    {
+      "id": 6,
+      "english": "In Jai Lava Kusa, which action by Jai reveals the twist about his Rudra persona’s origin?",
+      "options": {
+        "a": "Revisits a childhood site",
+        "b": "Orchestrates a gang attack",
+        "c": "Recounts a traumatic event",
+        "d": "Defies his mentor’s orders"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 7,
+      "english": "In Janatha Garage, what task ties Sathyam to the twist of his mission?",
+      "options": {
+        "a": "Organizes a protest march",
+        "b": "Uncovers a corporate scam",
+        "c": "Defends villagers from goons",
+        "d": "Initiates a reforestation effort"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 8,
+      "english": "In Simhadri, which act by Simhadri confirms the twist of his loyalty?",
+      "options": {
+        "a": "Guards his master’s family",
+        "b": "Battles a rival clan",
+        "c": "Organizes a festival",
+        "d": "Conceals his strength"
+      },
+      "correct": "a"
+    },
+    {
+      "id": 9,
+      "english": "In Adhurs, what task by Chari confirms the twist of his twin connection to Narasimha?",
+      "options": {
+        "a": "Escapes a gang ambush",
+        "b": "Impersonates in a fight",
+        "c": "Retrieves a family heirloom",
+        "d": "Meets their estranged parent"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 10,
+      "english": "In Brindavanam, which act by Krishna drives the twist to unite the families?",
+      "options": {
+        "a": "Competes in a local contest",
+        "b": "Mediates a family dispute",
+        "c": "Stages a fake engagement",
+        "d": "Reveals a hidden truth"
+      },
+      "correct": "c"
+    }
+  ]
+}

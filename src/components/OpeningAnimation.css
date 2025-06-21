@@ -1,0 +1,41 @@
+.animation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  animation: fadeIn 1.2s ease-out forwards;
+  padding: 1rem;
+  text-align: center;
+}
+
+.image-container {
+  width: 10rem;
+  height: 10rem;
+  background-image: url('https://i.redd.it/jr-ntr-new-pics-from-an-adshoot-v0-pkj4m6wtf82b1.jpg?width=1080&format=pjpg&auto=webp&s=b4a07c84f28368761784adbf2450135488214621');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  animation: bounce 2s infinite;
+}
+
+.animation-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #facc15; /* Yellow accent */
+  margin-top: 1rem;
+  animation: fadeInUp 1s ease-in forwards;
+}
+
+/* Laptop styles */
+@media (min-width: 768px) {
+  .image-container {
+    width: 14rem;
+    height: 14rem;
+  }
+  .animation-title {
+    font-size: 2.25rem;
+  }
+}
