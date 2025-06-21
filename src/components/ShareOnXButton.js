@@ -6,7 +6,7 @@ const ShareOnXButton = ({ userId, score }) => {
 
   const handleShareOnX = () => {
     
-    const quizLink = encodeURIComponent("https://your-quiz-website.com"); // IMPORTANT: Replace with your actual quiz URL
+    const quizLink = encodeURIComponent("https://jntrquiz.web.app"); // IMPORTANT: Replace with your actual quiz URL
     const hashtags = encodeURIComponent("JrNTRQuiz,FanQuiz,Tollywood,Quiz");
 
     alert("Please download your certificate first (if you haven't) and then you can manually attach it to the tweet!");
