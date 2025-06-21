@@ -5,9 +5,8 @@ import { db } from '../index';
 import { collection, getDocs } from 'firebase/firestore';
 import './Leaderboard.css';
 import ShareOnXButton from './ShareOnXButton'; // Import Share on X button
-import DownloadCertificateButton from './DownloadCertificateButton'; // Import Download Certificate button
 
-const Leaderboard = ({ setStage, currentUserId = '' }) => {
+const Leaderboard = ({ currentUserId = '' }) => {
   const [leaderboard, setLeaderboard] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -141,32 +140,51 @@ const Leaderboard = ({ setStage, currentUserId = '' }) => {
         )}
       </motion.div>
 
-      <motion.div className="leaderboard-actions">
-        <motion.button
-          onClick={() => setStage('animation')}
-          className="back-button"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+      {currentUserEntry && (
+        <motion.div
+          className="certificate-preview"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
         >
-          Back to Start
-        </motion.button>
-
-        {/* Render Download Certificate Button if currentUserEntry is available */}
-        {currentUserEntry && (
-          <DownloadCertificateButton
-            userId={currentUserEntry.userId}
-            score={currentUserEntry.score}
+          <div
+            className="certificate-content"
+            dangerouslySetInnerHTML={{
+              __html: `
+                <div style="width: 100%; height: 100%; padding: 0; text-align: center; background-color: #1a202c; color: #fff; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; align-items: center; border: 5px solid #f6e05e; box-sizing: border-box;">
+                  <img src="images/ntr-logo.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.6; z-index: 1;" alt="Certificate Background"/>
+                  <div style="position: relative; z-index: 2; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 20px;">
+                    <div style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 10px;">
+                      <img src="images/ntr-background.jpg" style="width: 50px; height: auto; margin-bottom: 10px; border-radius: 50%; border: 2px solid #f6e05e;" alt="NTR Logo"/>
+                      <h1 style="font-family: 'Playfair Display', serif; font-size: 24px; margin: 0; color: #f6e05e; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); line-height: 1.1; font-weight: 700; letter-spacing: 1px;">Certificate of Achievement</h1>
+                    </div>
+                    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+                      <p style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 5px; color: #eee; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);">Tiger Nation presented to</p>
+                      <h2 style="font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 10px; text-transform: uppercase; color: #ffffff; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); border-bottom: 2px double #f6e05e; padding-bottom: 4px; line-height: 1.1; font-weight: 700; letter-spacing: 0.5px; text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.5);">${getDisplayUserId(currentUserEntry.userId)}</h2>
+                      <p style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 5px; color: #eee; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);">for successfully completing the</p>
+                      <h3 style="font-family: 'Playfair Display', serif; font-size: 18px; margin-bottom: 10px; color: #f6e05e; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); line-height: 1.2; font-weight: 600;">Jr. NTR Ultimate Fan Quiz</h3>
+                      <p style="font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 5px; color: #eee; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);">with an outstanding score of</p>
+                      <p style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 0; color: #ffffff; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); font-weight: bold; line-height: 1.1; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">${currentUserEntry.score}/10</p>
+                    </div>
+                    <div style="width: 100%; margin-top: auto; padding-top: 15px; border-top: 1px dashed rgba(255,255,255,0.4); display: flex; justify-content: space-between; align-items: flex-end;">
+                      <p style="font-family: 'Poppins', sans-serif; font-size: 10px; margin: 0; color: #eee;">Date: ${new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                      <p style="font-family: 'Poppins', sans-serif; font-size: 10px; margin: 0; color: #eee;">@TaRRRock_Twin3</p>
+                    </div>
+                    <p style="font-family: 'Poppins', sans-serif; font-size: 12px; margin-top: 10px; margin-bottom: 0;"><a href="https://jntrquiz.web.app" style="color: #f6e05e; text-decoration: none; font-weight: bold;">www.jntrquiz.web.app</a></p>
+                  </div>
+                </div>
+              `
+            }}
           />
-        )}
+        </motion.div>
+      )}
 
-        {/* Render Share on X Button if currentUserEntry is available */}
-        {currentUserEntry && (
-          <ShareOnXButton
-            userId={currentUserEntry.userId}
-            score={currentUserEntry.score}
-          />
-        )}
-      </motion.div>
+      {currentUserEntry && (
+        <ShareOnXButton
+          userId={currentUserEntry.userId}
+          score={currentUserEntry.score}
+        />
+      )}
     </motion.div>
   );
 };

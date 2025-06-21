@@ -8,7 +8,7 @@
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(135deg, #1a202c, #2d3748);
-  padding: 1rem; /* Reduced padding for mobile */
+  padding: 1rem;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   position: relative;
@@ -34,11 +34,11 @@
 }
 
 .leaderboard-title {
-  font-size: 1.8rem; /* Smaller for mobile */
+  font-size: 1.8rem;
   font-weight: 700;
   color: #f6e05e;
-  text-shadow: 0 0 15px rgba(246, 224, 94, 0.6); /* Reduced shadow */
-  margin-bottom: 1rem; /* Reduced margin */
+  text-shadow: 0 0 15px rgba(246, 224, 94, 0.6);
+  margin-bottom: 1rem;
   animation: fadeInDown 1s ease-out;
   z-index: 2;
 }
@@ -50,57 +50,57 @@
 
 .leaderboard-table {
   width: 100%;
-  max-width: 400px; /* Reduced max-width for mobile */
+  max-width: 400px;
   background: linear-gradient(135deg, #2d3748, #4a5568);
-  border-radius: 10px; /* Smaller radius */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Reduced shadow */
-  padding: 0.5rem; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
   overflow: hidden;
   z-index: 2;
 }
 
 .ellipsis-row {
-  font-size: 1.2rem; /* Smaller for mobile */
+  font-size: 1.2rem;
   color: #f6e05e;
   text-align: center;
-  padding: 0.5rem; /* Reduced padding */
+  padding: 0.5rem;
   z-index: 2;
 }
 
 .table-header {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  font-size: 0.9rem; /* Smaller for mobile */
+  font-size: 0.9rem;
   font-weight: 600;
   color: #f6e05e;
   text-transform: uppercase;
-  padding: 0.5rem; /* Reduced padding */
-  border-bottom: 1px solid #f6e05e; /* Thinner border */
+  padding: 0.5rem;
+  border-bottom: 1px solid #f6e05e;
 }
 
 .table-row {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  font-size: 0.9rem; /* Smaller for mobile */
-  padding: 0.5rem; /* Reduced padding */
+  font-size: 0.9rem;
+  padding: 0.5rem;
   background: rgba(45, 55, 72, 0.9);
-  margin: 0.3rem 0; /* Reduced margin */
-  border-radius: 5px; /* Smaller radius */
+  margin: 0.3rem 0;
+  border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 2;
 }
 
 .table-row:hover {
-  transform: translateY(-3px); /* Reduced hover effect */
-  box-shadow: 0 5px 15px rgba(246, 224, 94, 0.2); /* Reduced shadow */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(246, 224, 94, 0.2);
 }
 
 .highlight-row {
   background: linear-gradient(90deg, #ffd70033, #ffd70022);
-  border-left: 3px solid #ffd700; /* Thinner border */
+  border-left: 3px solid #ffd700;
   color: #fff;
   font-weight: bold;
-  box-shadow: 0 0 8px #ffd70044; /* Reduced shadow */
+  box-shadow: 0 0 8px #ffd70044;
   animation: highlightPulse 1.5s infinite;
 }
 
@@ -110,83 +110,76 @@
   100% { box-shadow: 0 0 8px #ffd70044; }
 }
 
-/* New: Styles for the button container */
-.leaderboard-actions {
-  display: flex;
-  flex-direction: column; /* Stack buttons vertically by default */
-  align-items: center; /* Center buttons horizontally */
-  gap: 15px; /* Space between buttons */
-  margin-top: 30px; /* Space above the button group */
-  padding-bottom: 20px; /* Space below the button group */
-  z-index: 2; /* Ensure buttons are above background effects */
+/* Styles for the certificate preview */
+.certificate-preview {
+  margin-top: 30px;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 400px;
 }
 
-/* Existing button styles (now applied to 'back-button' and 'next-button') */
-/* You might want to define a common button base style and then extend it */
-.back-button,
-.next-button { /* Added .next-button here as per its use in components */
+.certificate-content {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  border: 5px solid #f6e05e;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for the button container */
+.leaderboard-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  z-index: 2;
+}
+
+/* Common button styles */
+.next-button,
+.share-on-x-button {
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
-  background: linear-gradient(90deg, #6c5ce7, #8e44ad); /* Example color for next/back */
+  background: linear-gradient(90deg, #6c5ce7, #8e44ad);
   color: #ffffff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.4s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  text-decoration: none; /* In case it's used as a link */
-  display: flex; /* For icon + text alignment */
+  text-decoration: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* Space between icon and text */
+  gap: 8px;
+  touch-action: manipulation; /* Ensure touch events work on all devices */
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
 }
 
-.back-button:hover,
-.next-button:hover {
+.next-button:hover,
+.share-on-x-button:hover {
   background: linear-gradient(90deg, #5b4dbd, #7d3ca0);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
 }
 
-/* Specific style for the Download Certificate button, if different */
-.certificate-button {
-  background: linear-gradient(90deg, #e74c3c, #c0392b); /* Example: Reddish gradient */
-  /* Inherits other styles from .next-button or .back-button */
-}
-
-.certificate-button:hover {
-  background: linear-gradient(90deg, #c0392b, #a52a2a);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
-}
-
-
 /* Specific style for the Share on X button */
 .share-on-x-button {
-  /* The inline styles in ShareOnXButton.js take precedence, but you can override or extend here */
-  /* It's better to manage common button properties in a shared class like .next-button */
-  background-color: #1DA1F2; /* X's brand blue */
+  background-color: #1DA1F2;
   color: white;
-  padding: 12px 25px; /* Adjust padding to match other buttons */
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  pointer-events: auto; /* Ensure pointer events are enabled */
+  z-index: 4; /* Ensure button is above other elements */
 }
 
 .share-on-x-button:hover {
-  background-color: #0d8bd3; /* Darker X blue on hover */
+  background-color: #0d8bd3;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(29, 161, 242, 0.4);
 }
-
 
 /* Media Queries for larger screens */
 @media (min-width: 768px) {
@@ -198,24 +191,28 @@
   .table-row:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(246, 224, 94, 0.3); }
   .highlight-row { border-left: 5px solid #ffd700; box-shadow: 0 0 10px #ffd70055; }
 
-  /* For larger screens, arrange buttons horizontally */
   .leaderboard-actions {
-    flex-direction: row; /* Align buttons horizontally */
-    gap: 30px; /* More space between buttons */
+    flex-direction: row;
+    gap: 30px;
   }
 
-  .back-button,
+  .certificate-preview {
+    max-width: 600px;
+  }
+
+  .certificate-content {
+    width: 100%;
+    height: auto;
+  }
+
   .next-button,
-  .certificate-button,
-  .share-on-x-button { /* Apply larger screen styles to all relevant buttons */
+  .share-on-x-button {
     font-size: 1.2rem;
     padding: 1rem 2rem;
     border-radius: 10px;
   }
 
-  .back-button:hover,
   .next-button:hover,
-  .certificate-button:hover,
   .share-on-x-button:hover {
     transform: translateY(-3px);
   }
