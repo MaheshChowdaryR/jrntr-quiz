@@ -2,111 +2,111 @@
   "questions": [
     {
       "id": 1,
-      "english": "In Nannaku Prematho, what task does Abhiram execute to drive the climax twist against Krishnamurthy?",
+      "english": "In *Nannaku Prematho*, what does Abhiram do that changes everything in the end?",
       "options": {
-        "a": "Decodes a financial ledger",
-        "b": "Sabotages a business deal",
-        "c": "Reveals a past family secret",
-        "d": "Tracks Krishnamurthy’s son"
+        "a": "Opens a hidden account",
+        "b": "Talks to Krishnamurthy’s daughter",
+        "c": "Tells truth about his father’s past",
+        "d": "Steals company papers"
       },
       "correct": "c"
     },
     {
       "id": 2,
-      "english": "In Oosaravelli, which action by Tony triggers the twist revealing his true motive?",
+      "english": "In *Oosaravelli*, what small action shows Tony’s real reason from the beginning?",
       "options": {
-        "a": "Destroys a gang’s hideout",
-        "b": "Burns a personal keepsake",
-        "c": "Interrogates a traitor",
-        "d": "Protects Niharika in a chase"
+        "a": "Burns an old photo",
+        "b": "Fights a gang leader",
+        "c": "Calls Niharika’s brother",
+        "d": "Buys a necklace"
+      },
+      "correct": "a"
+    },
+    {
+      "id": 3,
+      "english": "In *Temper*, what makes Daya suddenly change his mindset?",
+      "options": {
+        "a": "Listens to victim’s story",
+        "b": "Arrests a girl",
+        "c": "Talks with his boss",
+        "d": "Looks at a CCTV video"
+      },
+      "correct": "a"
+    },
+    {
+      "id": 4,
+      "english": "In *Aravindha Sametha*, what does Veera Raghava do that shows he wants peace?",
+      "options": {
+        "a": "Fights a rival leader",
+        "b": "Talks in front of villagers",
+        "c": "Burns weapons",
+        "d": "Saves a boy"
       },
       "correct": "b"
     },
     {
-      "id": 3,
-      "english": "In Temper, what task does Daya perform that sparks the twist in his moral shift?",
-      "options": {
-        "a": "Investigates a crime scene",
-        "b": "Escorts a key witness",
-        "c": "Confronts his corrupt boss",
-        "d": "Hears a victim’s statement"
-      },
-      "correct": "d"
-    },
-    {
-      "id": 4,
-      "english": "In Aravindha Sametha, which act by Veera Raghava seals the twist toward peace?",
-      "options": {
-        "a": "Negotiates with faction leaders",
-        "b": "Restores a community center",
-        "c": "Disarms rival fighters",
-        "d": "Addresses a village gathering"
-      },
-      "correct": "d"
-    },
-    {
       "id": 5,
-      "english": "In Rakhi, what task does Ramakrishna undertake to uncover the twist about his sister’s fate?",
+      "english": "In *Rakhi*, how does Ramakrishna find out the truth about his sister?",
       "options": {
-        "a": "Examines her personal letters",
-        "b": "Pursues her last contact",
-        "c": "Searches her workplace",
-        "d": "Challenges her in-laws"
+        "a": "Reads her diary",
+        "b": "Checks her office bag",
+        "c": "Questions her friend",
+        "d": "Goes to police station"
       },
       "correct": "a"
     },
     {
       "id": 6,
-      "english": "In Jai Lava Kusa, which action by Jai reveals the twist about his Rudra persona’s origin?",
+      "english": "In *Jai Lava Kusa*, what makes Jai open up about his pain?",
       "options": {
-        "a": "Revisits a childhood site",
-        "b": "Orchestrates a gang attack",
-        "c": "Recounts a traumatic event",
-        "d": "Defies his mentor’s orders"
+        "a": "Tells his past story",
+        "b": "Watches his brothers",
+        "c": "Destroys his old costume",
+        "d": "Runs away from the stage"
       },
-      "correct": "c"
+      "correct": "a"
     },
     {
       "id": 7,
-      "english": "In Janatha Garage, what task ties Sathyam to the twist of his mission?",
+      "english": "In *Janatha Garage*, what action by Sathyam shows his true mission?",
       "options": {
-        "a": "Organizes a protest march",
-        "b": "Uncovers a corporate scam",
-        "c": "Defends villagers from goons",
-        "d": "Initiates a reforestation effort"
+        "a": "Starts planting trees",
+        "b": "Stops a politician",
+        "c": "Fights for villagers",
+        "d": "Opens a garage branch"
       },
-      "correct": "d"
+      "correct": "a"
     },
     {
       "id": 8,
-      "english": "In Simhadri, which act by Simhadri confirms the twist of his loyalty?",
+      "english": "In *Simhadri*, what act shows Simhadri’s loyalty clearly?",
       "options": {
-        "a": "Guards his master’s family",
-        "b": "Battles a rival clan",
-        "c": "Organizes a festival",
-        "d": "Conceals his strength"
+        "a": "Guards Indu’s family secretly",
+        "b": "Joins a temple event",
+        "c": "Fights with his own men",
+        "d": "Stays silent in court"
       },
       "correct": "a"
     },
     {
       "id": 9,
-      "english": "In Adhurs, what task by Chari confirms the twist of his twin connection to Narasimha?",
+      "english": "In *Adhurs*, how is Chari’s twin identity revealed?",
       "options": {
-        "a": "Escapes a gang ambush",
-        "b": "Impersonates in a fight",
-        "c": "Retrieves a family heirloom",
-        "d": "Meets their estranged parent"
+        "a": "Meets his real father",
+        "b": "Acts like Narasimha",
+        "c": "Runs from goons",
+        "d": "Finds childhood photo"
       },
-      "correct": "d"
+      "correct": "a"
     },
     {
       "id": 10,
-      "english": "In Brindavanam, which act by Krishna drives the twist to unite the families?",
+      "english": "In *Brindavanam*, what trick does Krishna use to bring both families together?",
       "options": {
-        "a": "Competes in a local contest",
-        "b": "Mediates a family dispute",
-        "c": "Stages a fake engagement",
-        "d": "Reveals a hidden truth"
+        "a": "Starts a family game",
+        "b": "Says he loves Bhumi",
+        "c": "Pretends marriage with Bhumi",
+        "d": "Fights with Bhumi’s uncle"
       },
       "correct": "c"
     }
