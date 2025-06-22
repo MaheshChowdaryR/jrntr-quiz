@@ -68,7 +68,7 @@
     },
     {
       "id": 7,
-      "english": "In *Janatha Garage*, what action by Sathyam shows his true mission?",
+      "english": "In *Janatha Garage*, what action by Abhi shows his true mission?",
       "options": {
         "a": "Starts planting trees",
         "b": "Stops a politician",
@@ -97,7 +97,7 @@
         "c": "Runs from goons",
         "d": "Finds childhood photo"
       },
-      "correct": "a"
+      "correct": "c"
     },
     {
       "id": 10,
