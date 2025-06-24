@@ -100,7 +100,7 @@ const Quiz = ({ setStage, userId, setScore }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        🎉 Special Announcement : Win War2 ticket! Top the leaderboard in the next 24 hours to claim! 🎉
+        🎉 Contest Ended 🎉
       </motion.p>
       <h1 className="quiz-title">Question {currentQuestion + 1}/10</h1>
       <motion.div
