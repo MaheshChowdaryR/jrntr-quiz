@@ -3,11 +3,11 @@
     {
       "id": 1,
       "english": "In *Jai Lava Kusa*, how do the three brothers differ in their personalities?",
-      "options":{
+      "options": {
         "a": "One is a leader, one is shy, one is angry",
         "b": "One is a teacher, one is a chef, one is a fighter",
         "c": "One is honest, one is cunning, one is violent",
-        "d": "One is rich, one is poor, one is brave",
+        "d": "One is rich, one is poor, one is brave"
       },
       "correct": "c"
     },
@@ -18,7 +18,7 @@
         "a": "A local dispute",
         "b": "A faction war",
         "c": "A political campaign",
-        "d": "A festival conflict",
+        "d": "A festival conflict"
       },
       "correct": "b"
     },
@@ -40,7 +40,7 @@
         "a": "To repair vehicles",
         "b": "To help the community",
         "c": "To hide illegal activities",
-        "d": "To train fighters",
+        "d": "To train fighters"
       },
       "correct": "b"
     },
@@ -51,7 +51,7 @@
         "a": "To resolve a family feud",
         "b": "To start a business",
         "c": "To avoid his enemies",
-        "d": "To pursue his studies",
+        "d": "To pursue his studies"
       },
       "correct": "a"
     },
@@ -95,7 +95,7 @@
         "a": "To join the British army",
         "b": "To rescue a kidnapped girl",
         "c": "To start a business",
-        "d": "To meet his childhood friend",
+        "d": "To meet his childhood friend"
       },
       "correct": "b"
     },
