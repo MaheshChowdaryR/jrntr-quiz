@@ -2,25 +2,25 @@
   "questions": [
     {
       "id": 1,
-      "english": "In *Nannaku Prematho*, what does Abhiram do that changes everything in the end?",
-      "options": {
-        "a": "Opens a hidden account",
-        "b": "Talks to Krishnamurthy’s daughter",
-        "c": "Tells truth about his father’s past",
-        "d": "Steals company papers"
+      "english": "In *Jai Lava Kusa*, how do the three brothers differ in their personalities?",
+      "options":{
+        "a": "One is a leader, one is shy, one is angry",
+        "b": "One is a teacher, one is a chef, one is a fighter",
+        "c": "One is honest, one is cunning, one is violent",
+        "d": "One is rich, one is poor, one is brave",
       },
       "correct": "c"
     },
     {
       "id": 2,
-      "english": "In *Oosaravelli*, what small action shows Tony’s real reason from the beginning?",
+      "english": "In *Aravindha Sametha*, what does Veera Raghava try to stop in his village?",
       "options": {
-        "a": "Burns an old photo",
-        "b": "Fights a gang leader",
-        "c": "Calls Niharika’s brother",
-        "d": "Buys a necklace"
+        "a": "A local dispute",
+        "b": "A faction war",
+        "c": "A political campaign",
+        "d": "A festival conflict",
       },
-      "correct": "a"
+      "correct": "b"
     },
     {
       "id": 3,
@@ -29,42 +29,42 @@
         "a": "Listens to victim’s story",
         "b": "Arrests a girl",
         "c": "Talks with his boss",
-        "d": "Looks at a CCTV video"
+        "d": "Self Realization"
       },
       "correct": "a"
     },
     {
       "id": 4,
-      "english": "In *Aravindha Sametha*, what does Veera Raghava do that shows he wants peace?",
+      "english": "In *Janatha Garage*, what is the main purpose of the garage in the story?",
       "options": {
-        "a": "Fights a rival leader",
-        "b": "Talks in front of villagers",
-        "c": "Burns weapons",
-        "d": "Saves a boy"
+        "a": "To repair vehicles",
+        "b": "To help the community",
+        "c": "To hide illegal activities",
+        "d": "To train fighters",
       },
       "correct": "b"
     },
     {
       "id": 5,
-      "english": "In *Rakhi*, how does Ramakrishna find out the truth about his sister?",
+      "english": "In *Brindavanam*, why does Krishna agree to stay with Bhumi’s family?",
       "options": {
-        "a": "Reads her diary",
-        "b": "Checks her office bag",
-        "c": "Questions her friend",
-        "d": "Goes to police station"
+        "a": "To resolve a family feud",
+        "b": "To start a business",
+        "c": "To avoid his enemies",
+        "d": "To pursue his studies",
       },
       "correct": "a"
     },
     {
       "id": 6,
-      "english": "In *Jai Lava Kusa*, what makes Jai open up about his pain?",
+      "english": "In *Nannaku Prematho*, why does Abhiram purposely lose a big deal before the climax?",
       "options": {
-        "a": "Tells his past story",
-        "b": "Watches his brothers",
-        "c": "Destroys his old costume",
-        "d": "Runs away from the stage"
+        "a": "To gain Krishnamurthy’s trust",
+        "b": "To help his father emotionally",
+        "c": "To protect his company’s secrets",
+        "d": "To trap Krishnamurthy in a bigger plan"
       },
-      "correct": "a"
+      "correct": "d"
     },
     {
       "id": 7,
@@ -90,25 +90,25 @@
     },
     {
       "id": 9,
-      "english": "In *Adhurs*, how is Chari’s twin identity revealed?",
+      "english": "In RRR, what is Komaram Bheem's mission in Delhi?",
       "options": {
-        "a": "Meets his real father",
-        "b": "Acts like Narasimha",
-        "c": "Runs from goons",
-        "d": "Finds childhood photo"
+        "a": "To join the British army",
+        "b": "To rescue a kidnapped girl",
+        "c": "To start a business",
+        "d": "To meet his childhood friend",
       },
-      "correct": "c"
+      "correct": "b"
     },
     {
       "id": 10,
-      "english": "In *Brindavanam*, what trick does Krishna use to bring both families together?",
+      "english": "In *Samba*, what business is the villain in?",
       "options": {
-        "a": "Starts a family game",
-        "b": "Says he loves Bhumi",
-        "c": "Pretends marriage with Bhumi",
-        "d": "Fights with Bhumi’s uncle"
+        "a": "Granite",
+        "b": "Gold",
+        "c": "Real estate",
+        "d": "Politics"
       },
-      "correct": "c"
+      "correct": "a"
     }
   ]
 }
