@@ -43,44 +43,40 @@ const Quiz = ({ setStage, userId, setScore }) => {
   }, [currentQuestion]);
 
   const handleNext = useCallback(async () => {
-    if (currentQuestion < shuffledQuestions.length - 1) {
-      setCurrentQuestion((prev) => prev + 1);
-    } else {
-      const finalScore = Object.entries(selectedOptions).reduce((acc, [q, opt]) => {
-        return acc + (shuffledQuestions[q].correct === opt ? 1 : 0);
-      }, 0);
-      setScore(finalScore);
+  if (currentQuestion < shuffledQuestions.length - 1) {
+    setCurrentQuestion((prev) => prev + 1);
+  } else {
+    const finalScore = Object.entries(selectedOptions).reduce((acc, [q, opt]) => {
+      return acc + (shuffledQuestions[q].correct === opt ? 1 : 0);
+    }, 0);
+    setScore(finalScore);
 
-      // Save to Firestore
-      await addDoc(collection(db, 'quizResults'), {
-        userId,
-        score: finalScore,
-        timeTaken,
-        timestamp: serverTimestamp(),
-        email: email || null, // Use controlled email
-        rank: 0 // Placeholder, updated later
-      });
+    let finalEmail = email; // Use the existing email state if available
 
-      // Prompt for email if not provided
-      if (!email) {
-        if (window.confirm('Enter your email for potential contact?')) {
-          const userEmail = prompt('Please enter your email:');
-          if (userEmail) {
-            setEmail(userEmail); // Update state
-            await addDoc(collection(db, 'quizResults'), {
-              userId,
-              score: finalScore,
-              timeTaken,
-              timestamp: serverTimestamp(),
-              email: userEmail,
-              rank: 0
-            });
-          }
+    // Prompt for email only if not already provided
+    if (!finalEmail) {
+      if (window.confirm('Enter your email for potential contact?')) {
+        const userEmail = prompt('Please enter your email:');
+        if (userEmail) {
+          setEmail(userEmail); // Update state
+          finalEmail = userEmail; // Use the provided email
         }
       }
-      setStage('completion');
     }
-  }, [currentQuestion, selectedOptions, setStage, setScore, shuffledQuestions, userId, timeTaken, email]);
+
+    // Save to Firestore once with the final email (or null if none provided)
+    await addDoc(collection(db, 'quizResults'), {
+      userId,
+      score: finalScore,
+      timeTaken,
+      timestamp: serverTimestamp(),
+      email: finalEmail || null,
+      rank: 0,
+    });
+
+    setStage('completion');
+  }
+}, [currentQuestion, selectedOptions, setStage, setScore, shuffledQuestions, userId, timeTaken, email]);
 
   const currentQ = shuffledQuestions[currentQuestion] || questions.questions[0];
   const questionText = currentQ.english;
