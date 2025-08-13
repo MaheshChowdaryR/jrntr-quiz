@@ -13,14 +13,14 @@
     },
     {
       "id": 2,
-      "english": "In *Aravindha Sametha*, what does Veera Raghava try to stop in his village?",
+      "english": "Which Hindi film has Jr NTR expressed interest in remaking?",
       "options": {
-        "a": "A local dispute",
-        "b": "A faction war",
-        "c": "A political campaign",
-        "d": "A festival conflict"
+        "a": "Mahaan",
+        "b": "Doom",
+        "c": "Mughal-e-Azam",
+        "d": "Sholay"
       },
-      "correct": "b"
+      "correct": "a"
     },
     {
       "id": 3,
@@ -37,12 +37,12 @@
       "id": 4,
       "english": "In *Janatha Garage*, what is the main purpose of the garage in the story?",
       "options": {
-        "a": "To repair vehicles",
-        "b": "To help the community",
-        "c": "To hide illegal activities",
-        "d": "To train fighters"
+        "a": "St. Mary’s School",
+        "b": "Loyola School",
+        "c": "Vidyaranya High School",
+        "d": "Delhi Public School"
       },
-      "correct": "b"
+      "correct": "c"
     },
     {
       "id": 5,
@@ -57,25 +57,25 @@
     },
     {
       "id": 6,
-      "english": "In *Nannaku Prematho*, why does Abhiram purposely lose a big deal before the climax?",
+      "english": "In which film did VV Vinayak make a guest appearance alongside Jr NTR?",
       "options": {
-        "a": "To gain Krishnamurthy’s trust",
-        "b": "To help his father emotionally",
-        "c": "To protect his company’s secrets",
-        "d": "To trap Krishnamurthy in a bigger plan"
+        "a": "Aadi",
+        "b": "Baadsah",
+        "c": "Samba",
+        "d": "Adhurs"
       },
       "correct": "d"
     },
     {
       "id": 7,
-      "english": "In *Janatha Garage*, what action by Anand shows his true mission?",
+      "english": "Which film was NTR nominated for SIIMA Best Actor but did not win?",
       "options": {
-        "a": "Starts planting trees",
-        "b": "Stops a politician",
-        "c": "Fights for villagers",
-        "d": "Opens a garage branch"
+        "a": "Janatha Garage",
+        "b": "ASVR",
+        "c": "Temper",
+        "d": "RRR"
       },
-      "correct": "a"
+      "correct": "b"
     },
     {
       "id": 8,
@@ -90,14 +90,14 @@
     },
     {
       "id": 9,
-      "english": "In RRR, what is Komaram Bheem's mission in Delhi?",
+      "english": "At what age did Jr NTR make his acting debut in the Telugu film",
       "options": {
-        "a": "To join the British army",
-        "b": "To rescue a kidnapped girl",
-        "c": "To start a business",
-        "d": "To meet his childhood friend"
+        "a": "12 months old",
+        "b": "24 months old",
+        "c": "17 months old",
+        "d": "20 months old"
       },
-      "correct": "b"
+      "correct": "c"
     },
     {
       "id": 10,
